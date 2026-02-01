@@ -38,19 +38,33 @@
       h1, h2, h3, h4, h5, h6 {
         font-family: 'Permanent Marker', cursive;
       }
+      @keyframes wave {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-wave {
+        animation: wave 20s linear infinite;
+      }
+      .animate-wave-slow {
+        animation: wave 30s linear infinite reverse;
+      }
     </style>
   <script type="importmap">
 {
   "imports": {
     "react/": "https://esm.sh/react@^19.2.4/",
     "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
     "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
   }
 }
 </script>
 </head>
   <body>
     <div id="root"></div>
+    <!-- Entry point for Vite build -->
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
