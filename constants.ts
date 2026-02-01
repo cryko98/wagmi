@@ -1,7 +1,7 @@
 export const CA = "xxxxxxxxxxxxxxxxxxxxxxxxx"; // Placeholder CA as requested
 
 export const ASSETS = {
-  LOGO: "https://wkkeyyrknmnynlcefugq.supabase.co/storage/v1/object/public/neww/wagmi.jpg",
+  LOGO: "https://wkkeyyrknmnynlcefugq.supabase.co/storage/v1/object/public/neww/photo_2026-02-01_20-30-48.jpg",
 };
 
 export const LINKS = {

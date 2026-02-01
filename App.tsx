@@ -181,9 +181,10 @@ const App: React.FC = () => {
               href={LINKS.X}
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-green-50 text-wagmi-dark text-2xl px-8 py-4 rounded-xl border-2 border-wagmi-dark shadow-[8px_8px_0px_0px_#052e16] hover:shadow-[4px_4px_0px_0px_#052e16] hover:translate-x-1 hover:translate-y-1 transition-all duration-200 flex items-center gap-2"
+              className="bg-green-50 text-wagmi-dark text-2xl px-8 py-4 rounded-xl border-2 border-wagmi-dark shadow-[8px_8px_0px_0px_#052e16] hover:shadow-[4px_4px_0px_0px_#052e16] hover:translate-x-1 hover:translate-y-1 transition-all duration-200 flex items-center justify-center"
+              aria-label="X (Twitter)"
             >
-              <XIcon size={24} /> Community
+              <XIcon size={32} />
             </a>
           </div>
         </div>
