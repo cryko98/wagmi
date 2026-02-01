@@ -5,7 +5,7 @@ export const ASSETS = {
 };
 
 export const LINKS = {
-  X: "https://x.com", 
+  X: "https://x.com/i/communities/2018042599047905510", 
   PUMP_FUN: "https://pump.fun/coin/44BF4E76FPGEmiS7HqE7g8C7FiokLbdUdMWqHnswpump", 
 };
 
