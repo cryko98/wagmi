@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Copy, Check, ExternalLink, Menu, X as XIcon, TrendingUp, Heart } from 'lucide-react';
+import { Copy, Check, ExternalLink, Menu, X as XIcon, TrendingUp, Heart, Zap } from 'lucide-react';
 import { CA, ASSETS, LINKS, COPY } from './constants';
 
 // Helper Components
@@ -82,11 +82,11 @@ const App: React.FC = () => {
             <div className="flex items-center gap-3">
               <img 
                 src={ASSETS.LOGO} 
-                alt="WAGMI Logo" 
+                alt="PumpLife Logo" 
                 className="h-12 w-12 rounded-full border-2 border-green-400 animate-bounce" 
                 style={{ animationDuration: '3s' }}
               />
-              <span className="text-2xl tracking-wider text-green-400">$WAGMI</span>
+              <span className="text-2xl tracking-wider text-green-400 uppercase">{COPY.TICKER}</span>
             </div>
             
             <div className="hidden md:block">
@@ -146,7 +146,7 @@ const App: React.FC = () => {
           <TrendingUp size={200} className="text-green-600" />
         </div>
         <div className="absolute bottom-20 right-10 opacity-20 pointer-events-none transform rotate-12 z-0">
-          <Heart size={200} className="text-green-600" />
+          <Zap size={200} className="text-green-600" />
         </div>
 
         <div className="max-w-7xl mx-auto text-center relative z-10">
@@ -155,17 +155,17 @@ const App: React.FC = () => {
               <div className="absolute -inset-1 bg-green-400 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
               <img 
                 src={ASSETS.LOGO} 
-                alt="WAGMI Meme" 
+                alt="PumpLife Meme" 
                 className="relative h-48 w-48 md:h-64 md:w-64 rounded-full border-4 border-wagmi-dark shadow-2xl object-cover transform transition-transform group-hover:rotate-6"
               />
             </div>
           </div>
           
-          <h1 className="text-6xl md:text-8xl text-wagmi-dark mb-4 drop-shadow-[4px_4px_0px_rgba(74,222,128,1)]">
+          <h1 className="text-6xl md:text-8xl text-wagmi-dark mb-4 drop-shadow-[4px_4px_0px_rgba(74,222,128,1)] uppercase">
             {COPY.TITLE}
           </h1>
           <p className="text-3xl md:text-4xl text-green-700 mb-8 font-hand font-bold">
-            The market is chaos. The vibe is eternal.
+            Live the Pump Life. Where the market is pumping and we all get rich.
           </p>
           
           <div className="flex flex-col md:flex-row justify-center items-center gap-6">
@@ -175,7 +175,7 @@ const App: React.FC = () => {
               rel="noopener noreferrer"
               className="bg-wagmi-dark text-green-400 text-2xl px-8 py-4 rounded-xl border-2 border-transparent hover:border-green-400 shadow-[8px_8px_0px_0px_#4ade80] hover:shadow-[4px_4px_0px_0px_#4ade80] hover:translate-x-1 hover:translate-y-1 transition-all duration-200"
             >
-              Get $WAGMI
+              Get {COPY.TICKER}
             </a>
             <a 
               href={LINKS.X}
@@ -217,19 +217,19 @@ const App: React.FC = () => {
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
-              <h2 className="text-5xl mb-8 text-green-600">The Lore</h2>
+              <h2 className="text-5xl mb-8 text-green-600">The Pump Life</h2>
               <div className="space-y-6 text-2xl leading-relaxed font-hand">
                 <p>
-                  Look, we've all been there. You bought the top. You sold the bottom. The discord is quiet. The founder deleted their Twitter. It feels hopeless.
+                  Tired of charts that go sideways? Tired of developers who don't know what they are doing? Welcome to the Pump Life.
                 </p>
                 <p className="font-bold text-green-800 bg-green-200 p-2 inline-block transform -rotate-1">
-                  But then you see it. A small green candle.
+                  We live for the green candles.
                 </p>
                 <p>
-                  $WAGMI isn't just a memecoin. It's a refusal to give up. It's the hand-drawn smile on a red chart. It's the belief that positivity breeds prosperity. We are building a community where good vibes are the only utility needed.
+                  PumpLife isn't just a memecoin, it's a movement. It's about living that life where the market is always pumping, and we are all getting rich together. Leave the jeets in the dust. The only way is up.
                 </p>
                 <p className="text-3xl text-center md:text-left pt-4 text-green-600 font-bold">
-                  We're All Gonna Make It.
+                  Get Rich. Live PumpLife.
                 </p>
               </div>
             </div>
@@ -238,8 +238,8 @@ const App: React.FC = () => {
                  <div className="absolute inset-0 bg-green-800 translate-x-4 translate-y-4 rounded-2xl"></div>
                  <img 
                   src={ASSETS.LOGO} 
-                  alt="WAGMI Vibes" 
-                  className="relative rounded-2xl border-4 border-green-800 z-10 grayscale hover:grayscale-0 transition-all duration-500"
+                  alt="PumpLife Vibes" 
+                  className="relative rounded-2xl border-4 border-green-800 z-10 hover:scale-105 transition-all duration-500"
                 />
               </div>
             </div>
@@ -250,28 +250,28 @@ const App: React.FC = () => {
       {/* How to Buy Section */}
       <section id="how-to-buy" className="py-24 px-4 bg-green-900 text-green-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-5xl text-center mb-16 text-green-300">How to Buy on Pump.fun</h2>
+          <h2 className="text-5xl text-center mb-16 text-green-300">How to Live the Pump Life</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <StepCard 
               number="01" 
               title="Create Wallet" 
-              desc="Download Phantom or Solflare. Keep your seed phrase safe (write it on paper!)." 
+              desc="Download Phantom. You need a place to store your future riches." 
             />
             <StepCard 
               number="02" 
               title="Get SOL" 
-              desc="Buy Solana from an exchange (Coinbase, Binance) and send it to your wallet address." 
+              desc="Buy Solana. It's the fuel for the rocket ship we are building." 
             />
             <StepCard 
               number="03" 
               title="Go to Pump.fun" 
-              desc="Connect your wallet to Pump.fun. It's the home of degens and dreamers." 
+              desc="Connect your wallet. This is where the magic happens." 
             />
             <StepCard 
               number="04" 
-              title="Swap for $WAGMI" 
-              desc="Paste the CA, hit buy, and hold. Welcome to the family." 
+              title="Swap for $PUMPLIFE" 
+              desc="Paste the CA, buy, and hold. Welcome to the Pump Life." 
             />
           </div>
 
@@ -294,9 +294,9 @@ const App: React.FC = () => {
           <div className="text-center md:text-left">
             <div className="flex items-center gap-2 justify-center md:justify-start mb-2">
               <img src={ASSETS.LOGO} alt="logo" className="w-8 h-8 rounded-full"/>
-              <span className="text-2xl font-bold">$WAGMI</span>
+              <span className="text-2xl font-bold">{COPY.TICKER}</span>
             </div>
-            <p className="text-green-600/60 text-lg">Positivity on the Solana Chain.</p>
+            <p className="text-green-600/60 text-lg">Living the Pump Life on Solana.</p>
           </div>
           
           <div className="flex gap-6">
@@ -306,8 +306,8 @@ const App: React.FC = () => {
         </div>
         
         <div className="max-w-4xl mx-auto mt-12 text-center text-green-800 text-sm font-sans opacity-60">
-          <p>DISCLAIMER: $WAGMI is a memecoin for entertainment purposes only. Crypto is volatile. Don't risk money you can't afford to lose. But also, stay positive.</p>
-          <p className="mt-2">© {new Date().getFullYear()} We're All Gonna Make It.</p>
+          <p>DISCLAIMER: {COPY.TICKER} is a memecoin for entertainment purposes only. Crypto is volatile. Don't risk money you can't afford to lose. But also, stay pumping.</p>
+          <p className="mt-2">© {new Date().getFullYear()} PumpLife.</p>
         </div>
       </footer>
     </div>
